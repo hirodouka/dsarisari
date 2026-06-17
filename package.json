@@ -1,0 +1,7 @@
+{
+  "name": "sari-sari-store-ledger",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "cd frontend && npm install && npm run build && cd .. && node build-script.js"
+  }
+}

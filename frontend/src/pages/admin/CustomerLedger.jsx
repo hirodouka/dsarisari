@@ -6,7 +6,7 @@ import { Input } from '../../components/Input';
 import { ArrowLeft, Plus, Check, Store, Trash2 } from 'lucide-react';
 import { Loading } from '../../components/Loading';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000/api';
+const API_URL = import.meta.env.VITE_API_URL || '/api';
 
 export const CustomerLedger = () => {
   const { id } = useParams();
