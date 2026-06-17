@@ -107,6 +107,10 @@ app.put('/api/debts/:id/pay', async (req, res) => {
   res.json({ message: 'Debt marked as paid' });
 });
 
-app.listen(port, () => {
-  console.log(`Backend service listening on port ${port}`);
-});
+if (process.env.NODE_ENV !== 'production') {
+  app.listen(port, () => {
+    console.log(`Backend service listening on port ${port}`);
+  });
+}
+
+module.exports = app;
