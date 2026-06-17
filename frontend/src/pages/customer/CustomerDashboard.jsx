@@ -5,7 +5,7 @@ import { Button } from '../../components/Button';
 import { LogOut, Receipt } from 'lucide-react';
 import { Loading } from '../../components/Loading';
 
-const API_URL = 'http://localhost:3000/api';
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000/api';
 
 export const CustomerDashboard = () => {
   const { id } = useParams();

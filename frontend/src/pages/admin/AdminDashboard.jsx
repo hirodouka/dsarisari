@@ -6,7 +6,7 @@ import { LogOut, ArrowRight, Wallet, Plus } from 'lucide-react';
 import { Input } from '../../components/Input';
 import { Loading } from '../../components/Loading';
 
-const API_URL = 'http://localhost:3000/api';
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000/api';
 
 export const AdminDashboard = () => {
   const navigate = useNavigate();
